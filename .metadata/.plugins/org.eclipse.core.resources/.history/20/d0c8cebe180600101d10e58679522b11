@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "LGSmHaSB", sans-serif;
+}
+a:visited,
+a:link {
+  color: black;
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(255, 130, 130);
+  z-index: 999;
+  padding-top: 15px;
+}
+
+header .sub {
+  display: none;
+  position: absolute;
+  background: pink;
+  width: 100%;
+}
+
+section h2 {
+  font-size: 1.688rem;
+  color: #bb0841;
+  font-weight: 500;
+}
+
+section hr {
+  border: solid 1.5px black;
+  opacity: 100;
+}
+
+.box li {
+  border-bottom: 1px solid #bbb;
+}

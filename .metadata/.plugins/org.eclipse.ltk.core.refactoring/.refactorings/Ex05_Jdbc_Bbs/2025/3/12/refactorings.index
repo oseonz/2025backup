@@ -1,0 +1,40 @@
+1742176583387	Rename package 'com.example.demo'
+1742176612036	Copy package
+1742176615776	Delete element
+1742176682197	Delete element
+1742180664379	Copy file
+1742180678194	Rename resource 'write.jsp'
+1742181327881	Delete element
+1742181410209	Delete element
+1742181430173	Move compilation unit
+1742181440727	Delete element
+1742181567425	Delete element
+1742183131357	Rename resource 'Views'
+1742183413845	Delete element
+1742183589169	Delete element
+1742259141291	Delete element
+1742259308241	Delete element
+1742259317965	Move compilation unit
+1742259329154	Delete element
+1742259337778	Delete element
+1742259340871	Delete element
+1742259343728	Delete element
+1742259382715	Rename compilation unit 'Ex05JdbcBbsApplicationTests.java'
+1742259498478	Delete element
+1742259659958	Delete element
+1742352375810	Delete element
+1742352930649	Move 'footer.jsp' to 'include'
+1742352935415	Move 'header.jsp' to 'include'
+1742353251242	Delete element
+1742353354086	Move 2 resources to 'bbs'
+1742354743604	Delete element
+1742354761317	Delete element
+1742354775257	Delete element
+1742355017036	Rename resource 'example'
+1742355047167	Rename resource 'demo'
+1742355252470	Move folder
+1742355256125	Copy compilation unit
+1742355281753	Delete element
+1742355323532	Move package
+1742355342294	Delete element
+1742355411543	Infer generic type arguments

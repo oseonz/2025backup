@@ -1,0 +1,176 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+
+    
+    <%@ include file="include/header.jsp" %>
+    
+    
+    <div class="container bg-info my-3" style="height:300px">
+    
+    
+    	
+    </div>
+    <div class="container">
+    	<div class="row">
+    		<div class="col bg-primary">1</div>
+    		<section class="newsArea container d-flex gap-4">
+      <div class="news">
+        <div class="sectHeader">
+          <h2>언론보도</h2>
+          <hr />
+        </div>
+        <div class="sectCon">
+          <div class="container">
+            <!-- <h3>글리스트( 게시물 : ${totalCount } )</h3> -->
+
+            <!-- <tr>
+                <th>번호</th>
+                <th>글쓴이</th>
+                <th>제목</th>
+                <th>삭제</th>
+              </tr> -->
+            <c:forEach items="${lists}" var="dto" varStatus="loop">
+              <div class="bg-info">
+                <ul class="p-0">
+                  <li class="pt-3 pb-3 border">
+                    <div>
+                      <h4>${dto.title }</h4>
+                      <span>${dto.formatterDate } /</span>
+                      <span>${dto.writer } /</span>
+                      <a href="#"><span>${dto.category }</span></a>
+                    </div>
+                  </li>
+                  <li class="pt-3 pb-3 border">
+                    <div>
+                      <h4>${dto.title }</h4>
+                      <span>${dto.formatterDate } /</span>
+                      <span>${dto.writer } /</span>
+                      <a href="#"><span>${dto.category }</span></a>
+                    </div>
+                  </li>
+                  <li class="pt-3 pb-3 border">
+                    <div>
+                      <h4>${dto.title }</h4>
+                      <span>${dto.formatterDate } /</span>
+                      <span>${dto.writer } /</span>
+                      <a href="#"><span>${dto.category }</span></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </c:forEach>
+            <!-- <c:forEach items="${lists}" var="dto" varStatus="loop">
+                <tr>
+                  <td>${totalCount - ((currentPage-1)*size + loop.index) }</td>
+                  <td>${dto.writer }</td>
+                  <td><a href="/view?id=${dto.id}" class="nav-link">${dto.category }</a></td>
+                  <td><a href="/delete?id=${dto.id}" class="btn btn-primary">삭제</a></td>
+                </tr>
+              </c:forEach> -->
+            <!-- <div class="d-flex justify-content-center">
+              <ul class="pagination">
+                <c:if test="${currentPage > 1 }">
+                  <li class="page-item">
+                    <a class="page-link" href="list?page=${currentPage -1}&size=${size}"
+                      >Previous</a
+                    >
+                  </li>
+                </c:if>
+
+                <c:if test="currentPage < totalPage">
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </c:if>
+              </ul>
+            </div> -->
+            <!-- <div class="d-flex justify-content-end">
+              <a href="/writeForm" class="btn btn-primary">글작성</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="notice">
+        <div class="sectHeader">
+          <h2>언론보도</h2>
+          <hr />
+        </div>
+        <div class="sectCon">
+          <div class="container">
+            <!-- <h3>글리스트( 게시물 : ${totalCount } )</h3> -->
+
+            <!-- <tr>
+                <th>번호</th>
+                <th>글쓴이</th>
+                <th>제목</th>
+                <th>삭제</th>
+              </tr> -->
+            <c:forEach items="${lists}" var="dto" varStatus="loop">
+              <div class="bg-info">
+                <ul class="p-0">
+                  <li class="pt-3 pb-3 border">
+                    <div>
+                      <h4>${dto.title }</h4>
+                      <span>${dto.formatterDate } /</span>
+                      <span>${dto.writer } /</span>
+                      <a href="#"><span>${dto.category }</span></a>
+                    </div>
+                  </li>
+                  <li class="pt-3 pb-3 border">
+                    <div>
+                      <h4>${dto.title }</h4>
+                      <span>${dto.formatterDate } /</span>
+                      <span>${dto.writer } /</span>
+                      <a href="#"><span>${dto.category }</span></a>
+                    </div>
+                  </li>
+                  <li class="pt-3 pb-3 border">
+                    <div>
+                      <h4>${dto.title }</h4>
+                      <span>${dto.formatterDate } /</span>
+                      <span>${dto.writer } /</span>
+                      <a href="#"><span>${dto.category }</span></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </c:forEach>
+            <!-- <c:forEach items="${lists}" var="dto" varStatus="loop">
+                <tr>
+                  <td>${totalCount - ((currentPage-1)*size + loop.index) }</td>
+                  <td>${dto.writer }</td>
+                  <td><a href="/view?id=${dto.id}" class="nav-link">${dto.category }</a></td>
+                  <td><a href="/delete?id=${dto.id}" class="btn btn-primary">삭제</a></td>
+                </tr>
+              </c:forEach> -->
+            <!-- <div class="d-flex justify-content-center">
+              <ul class="pagination">
+                <c:if test="${currentPage > 1 }">
+                  <li class="page-item">
+                    <a class="page-link" href="list?page=${currentPage -1}&size=${size}"
+                      >Previous</a
+                    >
+                  </li>
+                </c:if>
+
+                <c:if test="currentPage < totalPage">
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </c:if>
+              </ul>
+            </div> -->
+            <!-- <div class="d-flex justify-content-end">
+              <a href="/writeForm" class="btn btn-primary">글작성</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    	</div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <%@ include file="include/footer.jsp" %>
+    

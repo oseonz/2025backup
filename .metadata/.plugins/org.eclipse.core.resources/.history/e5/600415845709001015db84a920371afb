@@ -1,0 +1,58 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+	<link rel="stylesheet" href="/webjars/bootstrap/5.3.3/css/bootstrap.css"
+	media="all" />
+<link rel="stylesheet" href="css/style.css" media="all" />
+
+<footer>
+		<div class="families d-flex justify-content-centera
+		">
+		      <ul class="familyLoop d-flex justify-content-center align-items-center">
+		        <li class="familyLoopItem">
+		          <img src="..\images\lgf-01.svg" alt="" class="lgfImg1" />
+		        </li>
+		        <li class="familyLoopItem">
+		          <img src="..\images\lgf-02.png" alt="" class="lgfImg2" />
+		        </li>
+		        <li class="familyLoopItem">
+		          <img src="..\images\lgf-03.svg" alt="" class="lgfImg3" />
+		        </li>
+		        <li class="familyLoopItem">
+		          <img src="..\images\lgf-04.svg" alt="" class="lgfImg4" />
+		        </li>
+		        <li class="familyLoopItem">
+		          <img src="..\images\lgf-05.png" alt="" class="lgfImg5" />
+		        </li>
+		        <li class="familyLoopItem">
+		          <img src="..\images\lgf-06.png" alt="" class="lgfImg6" />
+		        </li>
+		      </ul>
+		    </div>
+
+      <div class="siteFooter text-white py-3">
+        <div class="container text-center py-3">
+          <nav class="mb-5">
+            <div>
+              <ul class="d-flex gap-4">
+                <li>1:1 문의</li>
+                <li>자주하는 질문</li>
+                <li>오시는 길</li>
+                <li>개인정보처리방침</li>
+              </ul>
+            </div>
+          </nav>
+          <p class="siteInfo text-start">
+            <a href="#"><img
+            width="176"
+            height="77"
+            src="..\images\lg-logo-new.svg"
+            alt="LG"
+            class="lgLogo"
+          /></a>
+            <span>연암문화재단 / 상록재단 / 연암학원</span>
+            <span>서울특별시 마포구 마포대로 155 LG마포빌딩</span>
+          </p>
+          <p class="text-start">Copyright © 2022 LG Foundation. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>

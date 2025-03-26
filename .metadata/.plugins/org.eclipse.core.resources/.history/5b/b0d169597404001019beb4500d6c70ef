@@ -1,0 +1,5 @@
+package com.study.spring.dto;
+
+public class SimpleBbsDto {
+
+}

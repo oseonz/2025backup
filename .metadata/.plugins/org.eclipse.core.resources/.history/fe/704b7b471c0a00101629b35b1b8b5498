@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+
+<%@ include file="../include/header.jsp" %>
+
+	<div class="listCon">
+      <div class="mb-3 container">
+        <h1 class="fos71 fw9">공지사항</h1>
+        <div>
+          <ul class="menu d-flex mt-5 p-0 gap-5 fos24">
+            <li>전체</li>
+            <li>연암문화재단</li>
+            <li>상록재단</li>
+            <li>연암학원</li>
+          </ul>
+        </div>
+      </div>
+      <section class="container mt-5">
+        <c:forEach items="${lists}" var="dto">
+          <div class="post2 container">
+      <div class="entryMeta py-2">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h2 class="pb-2 fos18 fw9">${dto.title }</h2>
+          </div>
+          <div>
+            <span class="fos14">${dto.formatterDate } /</span>
+            <a href="#"><span class="mColor fos14">${dto.category }</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+        </c:forEach>
+      </section>
+    </div>
+<%@ include file="../include/footer.jsp" %>

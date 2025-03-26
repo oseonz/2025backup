@@ -1,0 +1,5 @@
+package com.study.spring.dao;
+
+public class SimpleBbsDao {
+
+}

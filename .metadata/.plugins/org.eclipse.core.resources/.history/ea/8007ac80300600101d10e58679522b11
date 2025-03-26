@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+
+<%@ include file="../include/header.jsp" %>
+
+	<div class="listCon">
+      <div class="mb-3 container">
+        <h1 class="fos71 fw9">언론보도</h1>
+        <div>
+          <ul class="menu d-flex mt-5 p-0 gap-5 fos24">
+            <li>전체</li>
+            <li>연암문화재단</li>
+            <li>상록재단</li>
+            <li>연암학원</li>
+          </ul>
+        </div>
+      </div>
+      <section class="container d-flex mt-4">
+        <c:forEach items="${lists}" var="dto">
+          <div class="post">
+            <img src="../250320jquery/images/listImg.jpg" alt="" class="listImg" />
+            <div class="entryMeta">
+              <h2 class="pb-2 fos18 fw9">${dto.title }</h2>
+              <span class="fos14">${dto.formatterDate } /</span>
+              <span class="fos14">${dto.writer } /</span>
+              <a href="#"><span class="mColor fos14">${dto.category }</span></a>
+            </div>
+          </div>
+        </c:forEach>
+      </section>
+    </div>
+<%@ include file="../include/footer.jsp" %>

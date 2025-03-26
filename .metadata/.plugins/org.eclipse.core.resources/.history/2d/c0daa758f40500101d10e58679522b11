@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+
+<%@ include file="../include/header.jsp" %>
+	<div class="container">
+		<h3>글리스트( 게시물 : ${totalCount } )</h3>
+		<table class="table table-striped table-hover">
+			<tr>
+				<th>번호</th>
+				<th>글쓴이</th>
+				<th>제목</th>
+				<th>날짜</th>
+			</tr>
+			<c:forEach items="${lists}" var="dto" varStatus="loop">
+				<tr>
+					<td>${totalCount - ((currentPage-1)*size + loop.index) }</td>
+					<td>${dto.title }</td>
+					<td><a href="/view?id=${dto.id}" class="nav-link">${dto.title }</a></td>
+					<%-- <td><a href="/delete?id=${dto.id}" class="btn btn-primary">삭제</a></td> --%>
+					<td>${dto.formatterDate }</td>
+				</tr>
+			</c:forEach>
+		</table>
+		<div class="d-flex justify-content-center">
+			<ul class="pagination">
+				<c:if test="${currentPage > 1 }">
+				
+				<li class="page-item">
+				<a class="page-link" href="list?page=${currentPage -1}&size=${size}">Previous</a></li>
+				</c:if>
+				
+				
+				
+				<c:if test="currentPage < totalPage">
+				<li class="page-item"><a class="page-link" href="#">Next</a></li>
+				</c:if>
+			</ul>
+		</div>
+		<div  class="d-flex justify-content-end">
+			<a href="/writeForm" class="btn btn-primary">글작성</a>
+		</div>
+	</div>
+<%@ include file="../include/footer.jsp" %>
