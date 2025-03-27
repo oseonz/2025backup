@@ -14,6 +14,12 @@ li {
   list-style: none;
 }
 
+.inner {
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -114,6 +120,17 @@ section hr {
 .listCon2 .post2 {
   border-bottom: 1px solid #bbb;
   padding: 0px;
+}
+
+/* about */
+.about .entryHeader {
+  margin-bottom: 80px;
+}
+
+.about .philosophy {
+  padding: 50px 0;
+  background-color: #f0f4f6;
+  text-align: c;
 }
 
 /* footer */

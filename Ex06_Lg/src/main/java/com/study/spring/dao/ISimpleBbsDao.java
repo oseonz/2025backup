@@ -27,10 +27,15 @@ public interface ISimpleBbsDao {
 
 	//delete - int
 	public int deleteDao(String id);
+	
+	public int aboutDao(String id);
 
 	public List<SimpleBbsDto> newsDao();
 	
 	public List<SimpleBbsDto> noticeDao();
+
+
+	
 
 
 	

@@ -125,6 +125,14 @@ public class SimpleBbsDao implements ISimpleBbsDao {
 		
 		return template.update(query, Integer.parseInt(id));
 	}
+
+	@Override
+	public int aboutDao(String id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
 	
 	
 

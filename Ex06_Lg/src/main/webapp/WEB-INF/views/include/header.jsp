@@ -28,7 +28,7 @@
         <nav>
           <ul class="menu d-flex gap-5 m-0">
             <li>
-              <a href="#"><span class="menuItem">LG재단</span></a>
+              <a href="/about"><span class="menuItem">LG재단</span></a>
               <ul class="sub">
                 <li><a href="#">재단 소개</a></li>
                 <li><a href="#">설립자</a></li>

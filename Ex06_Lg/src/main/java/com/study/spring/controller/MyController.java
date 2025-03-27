@@ -165,6 +165,17 @@ public class MyController {
 		return "redirect:/list";
 	}
 	
+	// http://localhost:8080/about?id=1
+		@RequestMapping("/about")
+		public String About(
+				HttpServletRequest request
+				) {
+			
+			dao.aboutDao(request.getParameter("id"));
+			
+			return "bbs/about";
+		}
+	
 	
 	
 	

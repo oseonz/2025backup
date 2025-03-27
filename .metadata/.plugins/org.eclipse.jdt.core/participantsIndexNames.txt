@@ -1,4 +1,6 @@
 INDEX VERSION 1.134
+C:\seojin\02java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3502053468.index
+\Ex06_Mybatis_Bbs\src\main\java
 C:\seojin\02java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2639794323.index
 \Ex05_Jdbc_Bbs\src\main\java
 C:\seojin\02java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1499216936.index
